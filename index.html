@@ -25,6 +25,16 @@
             moreOptions.style.display = "none";
          }
       }
+      function showOption() {
+         var selectBo = document.getElementById("selectBo");
+         var option = selectBo.options[selectBo.selectedIndex].value;
+         var moreOptions = document.getElementById("moreOption");
+         if (option == "Yes") {
+            moreOption.style.display = "block";
+         } else {
+            moreOption.style.display = "none";
+         }
+      }
    </script>
    <!-- animation -->
    <link rel="stylesheet" href="../unpkg.com/aos%403.0.0-beta.6/dist/aos.html">
@@ -529,76 +539,116 @@
                                  placeholder="Your Last Name" required>
                            </div>
                            <div class="col-lg-12">
-                              <label for="exampleFormControlInput3" class="form-label">Email address</label>
-                              <input type="email" name="email" class="form-control" id="exampleFormControlInput3"
-                                 placeholder="Enter Email" required>
-                           </div>
-                           <div class="col-lg-12">
-                              <label for="exampleFormControlInput4" class="form-label">Phone Number</label>
-                              <input type="text" name="phone" class="form-control" id="exampleFormControlInput4"
-                                 placeholder="Phone Number" required>
-                           </div>
+                              <label for="exampleFormControlInput8" class="form-label">Year of Graduation</label>
 
-                           <div class="col-lg-12">
-                              <label for="exampleFormControlInput8" class="form-label">Country</label>
-
-                              <select id="country" onchange="updateStates()" class="form-control bg-black-50"
-                                 name="country">
-                                 <option value="">--Please choose a country--</option>
-                                 <option value="usa">United States</option>
-                                 <option value="canada">Canada</option>
-                                 <option value="mexico">Mexico</option>
-                                 <option value="argentina">Argentina</option>
-                                 <option value="brazil">Brazil</option>
-                                 <option value="chile">Chile</option>
-                                 <option value="colombia">Colombia</option>
-                                 <option value="ecuador">Ecuador</option>
-                                 <option value="peru">Peru</option>
-                                 <option value="france">France</option>
-                                 <option value="germany">Germany</option>
-                                 <option value="italy">Italy</option>
-                                 <option value="spain">Spain</option>
-                                 <option value="united-kingdom">United Kingdom</option>
-                                 <option value="australia">Australia</option>
-                                 <option value="china">China</option>
-                                 <option value="india">India</option>
-                                 <option value="japan">Japan</option>
-                                 <option value="south-korea">South Korea</option>
-                                 <option value="russia">Russia</option>
-                                 <option value="south-africa">South Africa</option>
-                                 <option value="egypt">Egypt</option>
-                                 <option value="nigeria">Nigeria</option>
-                                 <option value="kenya">Kenya</option>
-                                 <option value="morocco">Morocco</option>
-                                 <option value="others">Others</option>
-
+                              <select id="country" class="form-control bg-black-50" name="gradyear">
+                                 <option value="">--Please choose a year you Graduate</option>
+                                 <option value="2025">2025</option>
+                                 <option value="2024">2024</option>
+                                 <option value="2023">2023</option>
+                                 <option value="2022">2022</option>
+                                 <option value="2021">2021</option>
+                                 <option value="2020">2020</option>
+                                 <option value="2019">2019</option>
+                                 <option value="2018">2018</option>
+                                 <option value="2017">2017</option>
+                                 <option value="2016">2016</option>
+                                 <option value="2015">2015</option>
+                                 <option value="2014">2014</option>
+                                 <option value="2013">2013</option>
+                                 <option value="2012">2012</option>
+                                 <option value="2011">2011</option>
                               </select>
-                              </select>
+                              <div class="col-lg-12">
+                                 <label for="exampleFormControlInput3" class="form-label">Email address</label>
+                                 <input type="email" name="email" class="form-control" id="exampleFormControlInput3"
+                                    placeholder="Enter Email" required>
+                              </div>
+                              <div class="col-lg-12">
+                                 <label for="exampleFormControlInput4" class="form-label">Phone Number</label>
+                                 <input type="text" name="phone" class="form-control" id="exampleFormControlInput4"
+                                    placeholder="Phone Number" required>
+                              </div>
 
-                              <label for="state" class="form-control bg-black-50">Select a state or region:</label>
-                              <select id="state" class="form-control bg-black-50" name="state">
-                                 <option value="">--Please choose a state or region--</option>
-                              </select>
-                           </div>
-                           <div class="col-lg-12">
-                              <label for="exampleFormControlInput8" class="form-label">Are You are Foreign Delegate
-                                 ?</label>
-                              <select class="form-control bg-black-50" name="foreigner" id="">
+                              <div class="col-lg-12">
+                                 <label for="exampleFormControlInput8" class="form-label">Country</label>
 
-                                 <option value="No">No</option>
-                                 <option Value="Yes">Yes</option>
+                                 <select id="country" onchange="updateStates()" class="form-control bg-black-50"
+                                    name="country">
+                                    <option value="">--Please choose a country--</option>
+                                    <option value="usa">United States</option>
+                                    <option value="canada">Canada</option>
+                                    <option value="mexico">Mexico</option>
+                                    <option value="argentina">Argentina</option>
+                                    <option value="brazil">Brazil</option>
+                                    <option value="chile">Chile</option>
+                                    <option value="colombia">Colombia</option>
+                                    <option value="ecuador">Ecuador</option>
+                                    <option value="peru">Peru</option>
+                                    <option value="france">France</option>
+                                    <option value="germany">Germany</option>
+                                    <option value="italy">Italy</option>
+                                    <option value="spain">Spain</option>
+                                    <option value="united-kingdom">United Kingdom</option>
+                                    <option value="australia">Australia</option>
+                                    <option value="china">China</option>
+                                    <option value="india">India</option>
+                                    <option value="japan">Japan</option>
+                                    <option value="south-korea">South Korea</option>
+                                    <option value="russia">Russia</option>
+                                    <option value="south-africa">South Africa</option>
+                                    <option value="egypt">Egypt</option>
+                                    <option value="nigeria">Nigeria</option>
+                                    <option value="kenya">Kenya</option>
+                                    <option value="morocco">Morocco</option>
+                                    <option value="others">Others</option>
 
-                              </select>
-                           </div>
-                           <div class="col-lg-12">
-                              <label for="exampleFormControlInput8" class="form-label">Would you like to reserve
-                                 accomodation with us ?</label>
-                              <select class="form-control bg-black-50" name="accomodation" id="">
-                                 <option value="No">No</option>
-                                 <option value="Yes">Yes</option>
+                                 </select>
 
 
-                              </select>
+                                 <label for="state" class="form-control bg-black-50">Select a state or region:</label>
+                                 <select id="state" class="form-control bg-black-50" name="state">
+                                    <option value="">--Please choose a state or region--</option>
+                                 </select>
+                              </div>
+                              <div class="col-lg-12">
+                                 <label for="exampleFormControlInput8" class="form-label">Are You are Foreign Delegate
+                                    ?</label>
+                                 <select class="form-control bg-black-50" name="foreigner" id="">
+
+                                    <option value="No">No</option>
+                                    <option Value="Yes">Yes</option>
+
+                                 </select>
+                              </div>
+                              <div class="col-lg-12">
+                                 <label for="exampleFormControlInput8" class="form-label">Would you like to reserve
+                                    accomodation with us ?</label>
+                                 <select class="form-control bg-black-50" name="accomodation" id="selectBo"
+                                    onchange="showOption()">
+                                    <option value="No">No</option>
+                                    <option value="Yes">Yes</option>
+
+
+                                 </select>
+                                 <div id="moreOption" style="display: none;"><br>
+                                    <div class="col-lg-12">
+                                       <label for="exampleFormControlInput4" class="form-label">Arrival Date</label>
+                                       <input type="date" class="form-control" name="arrival"
+                                          id="exampleFormControlInput4" placeholder="Name of Ministry">
+                                    </div>
+                                    <br>
+                                    <div class="col-lg-12">
+                                       <label for="exampleFormControlInput4" class="form-label">Departure Date</label>
+                                       <input type="date" class="form-control" name="departure"
+                                          id="exampleFormControlInput4" placeholder="Position in Ministry">
+                                    </div>
+                                    <br>
+                                 </div>
+
+                                 <br>
+
+                              </div>
                            </div>
 
                            <div class="col-lg-12">
