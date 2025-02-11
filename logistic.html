@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logistics</title>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&amp;display=swap"
+        rel="stylesheet">
+    <script type="text/javascript">
+        function showOptions() {
+            var selectBox = document.getElementById("selectBox");
+            var option = selectBox.options[selectBox.selectedIndex].value;
+            var moreOptions = document.getElementById("moreOptions");
+            if (option == "Yes") {
+                moreOptions.style.display = "block";
+            } else {
+                moreOptions.style.display = "none";
+            }
+        }
+    </script>
+    <!-- animation -->
+    <link rel="stylesheet" href="../unpkg.com/aos%403.0.0-beta.6/dist/aos.html">
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.html">
+
+    <!-- magnific popup -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.html"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- slik carousel -->
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Color switch Alternatives -->
+    <link rel="stylesheet" type="text/css" href="color-switch/css/switch.css">
+    <link href="color-switch/css/color-2.css" rel="alternate stylesheet" type="text/css" title="color-2">
+    <link href="color-switch/css/color-3.css" rel="alternate stylesheet" type="text/css" title="color-3">
+    <link href="color-switch/css/color-4.css" rel="alternate stylesheet" type="text/css" title="color-4">
+    <link href="color-switch/css/color-5.css" rel="alternate stylesheet" type="text/css" title="color-5">
+    <link href="color-switch/css/color-6.css" rel="alternate stylesheet" type="text/css" title="color-6">
+    <link href="color-switch/css/color-7.css" rel="alternate stylesheet" type="text/css" title="color-7">
+    <link href="color-switch/css/color-8.css" rel="alternate stylesheet" type="text/css" title="color-8">
+
+</head>
+
+<body>
+    <!-- This code is use for color chooser, you can delete -->
+
+    <!-- end color switch -->
+    <style>
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+
+    <div class="body-wrap">
+        <!-- header area start -->
+        <header class="header-area">
+            <nav class="header-nav navbar fixed-top navbar-expand-lg position-absolute w-100">
+                <div class="container header-nav-menu">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/images/logo/logo 1.png" alt="Header Logo">
+                    </a>
+
+
+                    <div class="collapse navbar-collapse d-none d-lg-block">
+                        <ul class="navbar-nav m-auto">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link py-3">10 YEARS ANNIVERSARY</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#guests" class="nav-link py-3">GUEST </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#flight" class="nav-link py-3">LOGISTICS </a>
+                            </li>
+                        </ul>
+                        <div class="mode-and-button d-flex align-items-center">
+                            <div class="mode me-md-5">
+                                <img src="assets/images/icon/sun.svg" alt="Sun" class="fa-sun" style="display: none;">
+                                <img src="assets/images/icon/moon.svg" alt="Moon" class="fa-moon">
+                            </div>
+                            <button class="header-btn custom-btn2"><a href="#register"
+                                    style="color:white;">Register</a></button>
+                        </div>
+                    </div>
+
+                    <!-- mobile menu -->
+                    <div class="mobile-view-header d-block d-lg-none d-flex gap-3 align-items-center">
+
+
+
+                        <button class="header-btn custom-btn2"><a href="#register" style="color:white;">
+                                Registration</a></button>
+
+                        <a class="border rounded-1 py-1 px-2 bg-light" data-bs-toggle="offcanvas"
+                            href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                            <span class="navbar-toggler-icon nav-toggler-icon"></span>
+                        </a>
+
+                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample">
+                            <div class="offcanvas-header">
+                                <a class="navbar-brand" href="index.html">
+                                    <img src="assets/images/logo/logo 1.png" alt="Header Logo">
+                                </a>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <div class="dropdown mt-3">
+                                    <ul class="navbar-nav m-auto">
+                                        <li class="nav-item">
+                                            <a href="#register" class="nav-link py-3">Registration </a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="#guests" class="nav-link py-3">GUEST </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#flight" class="nav-link py-3">LOGISTICS </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end mobile menu -->
+
+                </div>
+            </nav>
+
+            <!-- hero sec start -->
+
+
+
+
+            <section class="hero-sec" style="background-image: url(assets/images/banner/main.jpg);">
+                <div class="hero-slider-wrap">
+                    <div class="hero-slider-item overflow-hidden">
+                        <div class="container">
+                            <div class="row align-items-center slide-3">
+
+                                <div class="col-lg-12 col-md-12 order-md-2 order-1">
+                                    <div class="item-video">
+                                        <div class="img-3 img-moving-anim1">
+                                            <img src="assets/images/banner/mainflyer.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="hero-slider-item overflow-hidden">
+                        <div class="container">
+                            <div class="row align-items-center slide-3">
+                                <div class="col-lg-12 col-md-6 order-md-1 order-2">
+                                    <div class="slider-item-content-wrap">
+                                        <div class="item-content">
+
+
+
+                                            <img src="assets/images/dots/dots.png" alt="Shadow Image"
+                                                class="dots-1 img-moving-anim3">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 order-md-2 order-1">
+                                    <div class="item-video">
+                                        <div class="img-3 img-moving-anim1">
+                                            <img src="assets/images/banner/mainflyer.jpg" width="100%" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!-- hero sec start -->
+        </header>
+        <!-- header area end -->
+
+
+        <!-- info sec start -->
+
+        <!-- info sec end -->
+
+        <!-- about sec start -->
+
+
+        <section id="speakerss" class="contact-sec" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="container">
+                <div class="col-xl-5 section-head text-center m-auto mb-5">
+
+                    <h1 class="title">
+                        10th Year Anniversary Logistics.
+                    </h1>
+                </div>
+                <div class="contact-wrap bg-none p-0">
+                    <div class="dots">
+                        <img src="assets/images/dots/dots13.png" alt="Shadow Image"
+                            class="contact-dots-1 img-moving-anim2">
+                    </div>
+                    <div class="contact-wrap row py-4 px-3 contact align-items-center m-0">
+
+                        <div class="col-lg-12 mt-4 mt-lg-0">
+
+                            <form class="contact-form" method="post">
+                                <div class="row gy-3">
+                                    <div class="col-lg-12">
+                                        <label for="fullname" class="form-label">Full Name (as it is in
+                                            Passport)</label>
+                                        <input type="text" name="fullname" class="form-control" id="fullname"
+                                            placeholder="Full Name (as it is in Passport)" required>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <label for="phone" class="form-label">Phone Number</label>
+                                        <input type="text" name="phone" class="form-control" id="phone"
+                                            placeholder="Phone Number" required>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <label for="email" class="form-label">Email address</label>
+                                        <input type="email" name="email" class="form-control" id="email"
+                                            placeholder="Enter Email" required>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <label for="country" class="form-label">Country of Residence?</label>
+                                        <input type="text" name="country" class="form-control" id="country"
+                                            placeholder="Country of Residence" required>
+                                    </div>
+
+
+                                    <div class="col-lg-12">
+                                        <label for="arrivalairport" class="form-label">Flight Arrival Airport</label>
+                                        <select class="form-control bg-black-50" name="arrivalairport"
+                                            id="arrivalairport">
+
+                                            <option value="Abuja (ABV)">Abuja (ABV)</option>
+                                            <option Value="Lagos (LOS)">Lagos (LOS)</option>
+
+                                        </select>
+                                    </div>
+
+
+                                    <div class="col-lg-12">
+                                        <label for="flightarrivaldate" class="form-label">Flight Arrival Date:</label>
+                                        <input type="date" name="flightarrivaldate" class="form-control"
+                                            id="flightarrivaldate" placeholder="Flight Arrival Date:" required>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <label for="flightarrivaltime" class="form-label">Flight Arrival Time:</label>
+                                        <input type="time" name="flightarrivaltime" class="form-control"
+                                            id="flightarrivaltime" placeholder="Flight Arrival time:" required>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <label for="needingvisa" class="form-label">Would you be needing a Nigeria
+                                            Visiting Visa?
+                                            (Required if you do not have a current Nigerian Passport. Cost is based on
+                                            the Passport
+                                            you currently have) USA: $175 CANADA: $280 UK: $349 JAMAICA: $225</label>
+                                        <input type="text" name="needingvisa" class="form-control" id="needingvisa"
+                                            placeholder="“YES” and indicate passport you are using to travel or NO Visa Needed"
+                                            required>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <label for="abujaaccommodation" class="form-label">1 Night Accommodation Needed
+                                            in Abuja
+                                            (This option is required if your arrival flight arrives later than
+                                            1:00pm)</label>
+                                        <select class="form-control bg-black-50" name="abujaaccommodation"
+                                            id="abujaaccommodation">
+
+                                            <option value="Yes">Yes</option>
+                                            <option Value="No">No</option>
+                                            <option Value="N/A">N/A</option>
+
+                                        </select>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <label for="abujaairportpickup" class="form-label">If answer to above question
+                                            is YES, you
+                                            will need transport Pick Up from Airport to Hotel. (Approx. cost varies
+                                            based on
+                                            vehicle preference):</label>
+                                        <select class="form-control bg-black-50" name="abujaairportpickup"
+                                            id="abujaairportpickup">
+
+                                            <option value="SUV: (Approx. $40)">SUV: (Approx. $40)</option>
+                                            <option Value="SIENNA VAN: (Approx. $35)">SIENNA VAN: (Approx. $35)</option>
+                                            <option Value="SEDAN: (Approx. $30)">SEDAN: (Approx. $30)</option>
+                                            <option Value="Not needing pickup">I will not be needing a vehicle pick up
+                                                at airport.
+                                            </option>
+
+                                        </select>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <label for="flightreturndate" class="form-label">Flight Return Date:</label>
+                                        <input type="date" name="flightreturndate" class="form-control"
+                                            id="flightreturndate" placeholder="Flight Return Date:" required>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <label for="flightreturntime" class="form-label">Flight Return Time:</label>
+                                        <input type="time" name="flightreturntime" class="form-control"
+                                            id="flightreturntime" placeholder="Flight Return time:" required>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <label for="returnairport" class="form-label">Flight Return Airport</label>
+                                        <select class="form-control bg-black-50" name="returnairport"
+                                            id="returnairport">
+
+                                            <option value="Abuja (ABV)">Abuja (ABV)</option>
+                                            <option Value="Lagos (LOS)">Lagos (LOS)</option>
+
+                                        </select>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <label for="commupreference" class="form-label">Communication
+                                            Preference:</label>
+                                        <select class="form-control bg-black-50" name="commupreference"
+                                            id="commupreference">
+
+                                            <option
+                                                value="I will be using International Data Plan with my phone carrier">I
+                                                will be
+                                                using International Data Plan with my phone carrier</option>
+                                            <option Value="I will need a SIM Card">I will need a SIM Card</option>
+                                            <option Value="I will be assessable on WhatsApp">I will be assessable on
+                                                WhatsApp
+                                            </option>
+
+                                        </select>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <label for="abujareturnaccommodation" class="form-label">1 Night Accommodation
+                                            Needed in
+                                            Abuja on Return (This option is required if your return flight from Abuja
+                                            leaves
+                                            anytime prior to 7pm)</label>
+                                        <select class="form-control bg-black-50" name="abujareturnaccommodation"
+                                            id="abujareturnaccommodation">
+
+                                            <option value="Yes">Yes</option>
+                                            <option Value="No">No</option>
+                                            <option Value="N/A">N/A</option>
+
+                                        </select>
+                                    </div>
+
+
+                                    <div class="col-lg-12">
+                                        <label for="abujaairportdropoff" class="form-label">If answer to above question
+                                            is YES,
+                                            you will need transport Drop Off from Hotel to Airport. (Approx. cost varies
+                                            based on
+                                            vehicle preference):</label>
+                                        <select class="form-control bg-black-50" name="abujaairportdropoff"
+                                            id="abujaairportdropoff">
+
+                                            <option value="SUV: (Approx. $40)">SUV: (Approx. $40)</option>
+                                            <option Value="SIENNA VAN: (Approx. $35)">SIENNA VAN: (Approx. $35)</option>
+                                            <option Value="SEDAN: (Approx. $30)">SEDAN: (Approx. $30)</option>
+                                            <option Value="Not needing pickup">I will not be needing a vehicle pick up
+                                                at hotel
+                                            </option>
+
+                                        </select>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <label for="abjaccommodationpref" class="form-label">Abuja Accommodation
+                                            Preference (Only
+                                            applies if your flight arrives later than 1pm as mentioned above)</label>
+                                        <select class="form-control bg-black-50" name="abjaccommodationpref"
+                                            id="abjaccommodationpref">
+
+                                            <option value="BON Hotel: Superior Deluxe (Approx. $85/Night)">BON Hotel:
+                                                Superior
+                                                Deluxe (Approx. $85/Night)</option>
+                                            <option Value="BON Hotel: Deluxe Room (Approx. $77/Night)">BON Hotel: Deluxe
+                                                Room
+                                                (Approx. $77/Night)</option>
+                                            <option Value="BON Hotel: Classic Room (Approx. $68/Night)">BON Hotel:
+                                                Classic Room
+                                                (Approx. $68/Night)</option>
+                                            <option Value="PINNATECH Suites: Standard (Approx. $35/Night)">PINNATECH
+                                                Suites:
+                                                Standard (Approx. $35/Night)</option>
+                                            <option Value="PINNATECH Suites: Deluxe (Approx. $45/Night)">PINNATECH
+                                                Suites: Deluxe
+                                                (Approx. $45/Night)</option>
+                                            <option Value="PINNATECH Suites: Executive (Approx. $50/Night)">PINNATECH
+                                                Suites:
+                                                Executive (Approx. $50/Night)</option>
+                                            <option Value="N/A">N/A</option>
+
+                                        </select>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <label for="mkdaccommodationpref" class="form-label">Makurdi Accommodation
+                                            Preference
+                                            (BATOHA RESORT):</label>
+                                        <select class="form-control bg-black-50" name="mkdaccommodationpref"
+                                            id="mkdaccommodationpref">
+
+                                            <option value="Executive (If available. Approx. $54/Night)">Executive (If
+                                                available.
+                                                Approx. $54/Night)</option>
+                                            <option Value="Deluxe Studio (Approx. $44/Night)">Deluxe Studio (Approx.
+                                                $44/Night)
+                                            </option>
+                                            <option Value="Deluxe Plus (Approx. $36/Night)">Deluxe Plus (Approx.
+                                                $36/Night)
+                                            </option>
+                                            <option Value="Deluxe (Approx. $30/Night)">Deluxe (Approx. $30/Night)
+                                            </option>
+                                            <option Value="N/A">N/A</option>
+
+                                        </select>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <label for="nightsinmkd" class="form-label">How Many Nights will you be staying
+                                            in
+                                            Makurdi?</label>
+                                        <input type="number" name="nightsinmkd" class="form-control" id="nightsinmkd"
+                                            placeholder="How Many Nights will you be staying in Makurdi?" min="1"
+                                            required>
+                                    </div>
+
+
+                                    <div class="col-lg-12">
+                                        <label for="flightabjlagos" class="form-label">Flight transportation from
+                                            Abuja/Lagos to
+                                            Makurdi (Approx. $300 Round Trip. You are entitled to 46Lbs luggage, any
+                                            extra pound is
+                                            Approx $1 per Lb) Pros: (1) Faster. Flight is less than an hour from Abuja.
+                                            Less than
+                                            3hrs from Lagos. Cons: (1) Occasional Delays/Cancellations (heard this has
+                                            improved,
+                                            but still worth noting historical accounts) (2) Smaller InterState
+                                            plane</label>
+                                        <select class="form-control bg-black-50" name="flightabjlagos"
+                                            id="flightabjlagos">
+
+                                            <option Value="No">No</option>
+                                            <option value="Yes">Yes</option>
+                                            <option Value="N/A">N/A</option>
+
+                                        </select>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <label for="mdkairportpickup" class="form-label">Makurdi Airport Pick Up (Needed
+                                            if you
+                                            will be taking a flight from Lagos or Abuja to Makurdi. Approx. Cost is
+                                            $10)</label>
+                                        <select class="form-control bg-black-50" name="mdkairportpickup"
+                                            id="mdkairportpickup">
+
+                                            <option Value="No">No</option>
+                                            <option value="Yes">Yes</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <label for="abjmkdlandtrip" class="form-label">Land transportation preference
+                                            from Abuja
+                                            to Makurdi (Round Trip). Pros: (1) No Delays. (2) Comfort (If by SUV or Van)
+                                            (3)
+                                            Convenient Pick Up at hotel or airport.Con: (1) Longer trip. Approx.
+                                            4hrs</label>
+                                        <select class="form-control bg-black-50" name="abjmkdlandtrip"
+                                            id="abjmkdlandtrip">
+
+                                            <option Value="SUV">SUV (Approx. $340 Round Trip. Can be shared with 2 or 3
+                                                people (if
+                                                available), bringing cost to Approx. $114 each)</option>
+                                            <option value="Sienna Van">Sienna Van (Approx. $300 Round Trip. Can be
+                                                shared with 2 or
+                                                3 people (if available), bringing cost to Approx. $100 each)</option>
+                                            <option Value="Sedan">Sedan (Approx. $160. Can be shared with another
+                                                person, (if
+                                                available) bringing cost to Approx. $80 each)</option>
+                                            <option Value="N/A">N/A</option>
+
+                                        </select>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <label for="abjmkdintracity" class="form-label">Intercity Transportation In
+                                            Makurdi (i.e.,
+                                            from Hotel to embassy and vice-versa)</label>
+                                        <select class="form-control bg-black-50" name="abjmkdintracity"
+                                            id="abjmkdintracity">
+
+                                            <option Value="I have my own intercity transport.">I have my own intercity
+                                                transport.
+                                            </option>
+                                            <option Value="SUV">SUV (Approx. $80/Day. Can be shared with 2 or 3 people
+                                                (if
+                                                available), bringing cost to Approx. $27 each/day)</option>
+                                            <option value="Sienna Van">Sienna (Approx. $50/Day. Can be shared with 2 or
+                                                3 people
+                                                (if available), bringing cost to Approx. $17 each/day)</option>
+                                            <option Value="Sedan">Sedan (Approx. $30/Day. Can be shared with 2 or 3
+                                                people (if
+                                                available), bringing cost to Approx. $10 each/day)</option>
+
+                                        </select>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <label for="mkdairportdropoff" class="form-label">Makurdi Airport Drop Off
+                                            (Needed if you
+                                            will be taking a return flight from Makurdi to Abuja or Lagos. Approx. Cost
+                                            is
+                                            $10)</label>
+                                        <select class="form-control bg-black-50" name="mkdairportdropoff"
+                                            id="mkdairportdropoff">
+
+                                            <option Value="No">No</option>
+                                            <option value="Yes">Yes</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <label for="needlocalcurrency" class="form-label">Would you be needing local
+                                            currency?</label>
+                                        <select class="form-control bg-black-50" name="needlocalcurrency"
+                                            id="needlocalcurrency">
+
+                                            <option Value="No">No</option>
+                                            <option value="Yes">Yes</option>
+                                        </select>
+                                    </div>
+
+
+
+                                    <br>
+
+                                </div>
+
+                        </div>
+                        <div class="mb-3">
+
+                        </div>
+                        <style>
+                            .center {
+                                text-align: center;
+                            }
+                        </style>
+                        <div class="center">
+                            <button class=" custom-btn2" style="text-align: center;" type="submit"
+                                name="submit">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dots">
+                    <img src="assets/images/dots/dots14.png" alt="Shadow Image" class="contact-dots-2 img-moving-anim3">
+                </div>
+            </div>
+    </div>
+    </section>
+
+
+    <div class="modal  popup-box fade" id="exampleModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog popup-box-dialog modal-dialog-centered">
+            <div class="modal-content popup-box-content">
+                <div class="popup-card" style="width:100%">
+                    <button type="button" class="btn popup2-btn  ms-auto" data-bs-dismiss="modal"><i
+                            class="fa-solid fa-xmark"></i></button>
+                    <img src="assets/images/popup.html" class="card-img-top" alt="popup-bg">
+                    <div class="card-body popup-card-body">
+                        <div class="popup-title-area" style="text-align: center;">
+                            <p class="popup-sub" style="text-align: center;">Join the WhatsApp Groups<br><br></p>
+                            <br><br>
+                        </div>
+
+                    </div><br><br>
+                    <form action="#" class="popup-form">
+                        <div class="row gy-3 mb-3">
+                            <div class="col-lg-12">
+                                <label for="exampleFormControlInput5" class="form-label">Choose your country / continent
+                                    from
+                                    the list below :</label><br>
+                            </div>
+                            <hr>
+
+                            <div class="col-lg-12">
+                                <a href='https://chat.whatsapp.com/EIVXjdDXINsJTqvwNEGVpU' target='blank'> <label
+                                        for="exampleFormControlInput5" class="form-label"> NIGERIA</label></a>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <a href='https://chat.whatsapp.com/IxyLRs9fRXL78UL6CMCbLx' target='blank'> <label
+                                        for="exampleFormControlInput5" class="form-label">NORTH AMERICA</label></a>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <a href='https://chat.whatsapp.com/KvlLqa1RojmDWkWN0bLm0y' target='blank'> <label
+                                        for="exampleFormControlInput5" class="form-label">AFRICA</label></a>
+                            </div>
+                            <div class="col-lg-12">
+                                <a href='https://chat.whatsapp.com/CZfRzm2vXnKApme86eh4uy' target='blank'><label
+                                        for="exampleFormControlInput5" class="form-label">UK</label></a>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <a href='https://chat.whatsapp.com/IyCZS2F8FJzJNVYRL4emEf' target='blank'> <label
+                                        for="exampleFormControlInput5" class="form-label">REST OF THE WORLD</label></a>
+                            </div>
+
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- speakers sec end -->
+    <div class="container">
+        <hr>
+    </div>
+    <!-- cta sec start-->
+
+
+
+    <!-- schedule sec start -->
+
+    <!-- video sec end -->
+
+    <!-- speakers sec start -->
+
+    <!-- blog sec end -->
+
+    <!-- footer area start -->
+    <footer class="footer-area" style="background-image: url(assets/images/banner/Footer.png);">
+        <div class="container"> For Enquruiry : +234 (0)8067215526
+
+            <hr>
+            <div class="footer-copyright-area text-center pb-3">
+                <span>© 2025 Adullam 10th Year Anniversary . All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+    <!-- footer area end -->
+
+
+
+    </div>
+    <!-- jquery -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.countdown.min.js"></script>
+
+    <!-- animation -->
+    <script src="../unpkg.com/aos%403.0.0-beta.6/dist/aos-2.html"></script>
+
+    <!-- magnific popup -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+
+    <!-- bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- slick -->
+    <script src="assets/js/slick.min.js"></script>
+
+    <!-- parallax js -->
+    <script src="assets/js/parallax.min.js"></script>
+
+    <!-- javaScript -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- color switch -->
+
+
+</body>
+
+
+<!-- Mirrored from rcnglobal.org/logistics/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Feb 2025 18:11:29 GMT -->
+
+</html>
